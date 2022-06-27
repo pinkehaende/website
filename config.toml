@@ -1,0 +1,4 @@
+baseURL = 'http://www.pinke-haende.de/'
+languageCode = 'de-de'
+title = 'Pinke Hände'
+theme = 'hugo-hero-theme'
