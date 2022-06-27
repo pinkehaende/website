@@ -2,3 +2,60 @@ baseURL = 'http://www.pinke-haende.de/'
 languageCode = 'de-de'
 title = 'Pinke Hände'
 theme = 'hugo-hero-theme'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "-1.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/logo-mobile.svg"
+    mobile_height = "35px"
+    mobile_width = "35px"
+    desktop = "images/logo.svg"
+    desktop_height = "28px"
+    desktop_width = "216px"
+    alt = "Hugo Hero"
+
+  [params.homepage_meta_tags]
+    meta_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_og_title = "Hugo Hero Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-hero.netlify.app"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
+    meta_og_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
+
+[[menu.main]]
+	name = "Services"
+	url = "/services/"
+    weight = 0
+
+[[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
