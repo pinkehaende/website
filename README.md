@@ -4,7 +4,7 @@ Dieses Repository dient als vollständige Quelle für den Webauftritt der Pinken
 
 ## Schneller Einstieg
 
-0. [git](https://git-scm.com/https://git-scm.com/downloads) und [hugo](https://gohugo.io/getting-started/installing/) installieren
+0. [git](https://git-scm.com/downloads) und [hugo](https://gohugo.io/getting-started/installing/) installieren
 1. Dieses Repository klonen
 ```sh
 git clone --recurse-submodules https://github.com/pinkehaende/website.git
