@@ -26,6 +26,7 @@ git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Meine tolle neue Idee: Zigarettenfilter mit Asbest"
 git push 
 ```
+4.1 Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 5. Änderungen veröffentlichen
 ```sh
 hugo --minify
