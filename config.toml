@@ -1,7 +1,7 @@
 baseURL = 'https://pinkehaende.github.io/website/'
 languageCode = 'de-de'
 title = 'Pinke Hände'
-theme = 'hugo-hero-theme'
+theme = 'pinkehaende-theme'
 
 [module]
   [module.hugoVersion]

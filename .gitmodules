@@ -1,3 +1,3 @@
-[submodule "themes/hugo-hero-theme"]
-	path = themes/hugo-hero-theme
-	url = https://github.com/zerostaticthemes/hugo-hero-theme.git
+[submodule "themes/pinkehaende-theme"]
+	path = themes/pinkehaende-theme
+	url = https://github.com/pinkehaende/website-theme.git
