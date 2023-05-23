@@ -1,8 +1,8 @@
 ---
 title: 'Umweltproblem Kippe'
 weight: 1
-background: 'images/1-2.jpg'
-button: 'Our Work'
+background: 'images/aufklaerung.jpg'
+button: 'Erfahre mehr'
 buttonLink: 'work'
 align: right
 ---

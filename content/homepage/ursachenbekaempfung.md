@@ -1,8 +1,8 @@
 ---
 title: 'Was wir tun'
 weight: 2
-background: 'images/1-2.jpg'
-button: 'Our Work'
+background: 'images/ursache.jpg'
+button: 'Unsere Aktionen'
 buttonLink: 'work'
 align: left
 ---
