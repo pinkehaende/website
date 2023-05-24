@@ -21,6 +21,15 @@ hugo server -D -E -F
 ```
 3. Dinge hinzufügen, ändern, entfernen
 4. Änderungen versionieren
+
+Nur bei Änderungen im Theme:
+```sh
+cd themes/pinkehaende-theme
+git add . # Oder eine Liste mit geänderten Dateien
+git commit -m "Fahndungsbilder von Umweltverschnutzern hinzugefügt"
+cd ../../
+```
+Immer:
 ```sh
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Meine tolle neue Idee: Zigarettenfilter mit Asbest"
