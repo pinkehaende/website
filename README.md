@@ -27,13 +27,13 @@ Nur bei Änderungen im Theme:
 cd themes/pinkehaende-theme
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Fahndungsbilder von Umweltverschnutzern hinzugefügt"
-cd ../../
+git push
 ```
 Immer:
 ```sh
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Meine tolle neue Idee: Zigarettenfilter mit Asbest"
-git push --recurse-submodules=on-demand
+git push
 ```
 5. Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 6. Änderungen veröffentlichen
