@@ -27,7 +27,7 @@ Nur bei Änderungen im Theme:
 cd themes/pinkehaende-theme
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Fahndungsbilder von Umweltverschnutzern hinzugefügt"
-git push
+git push origin HEAD:master
 ```
 Immer:
 ```sh
