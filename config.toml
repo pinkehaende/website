@@ -32,8 +32,8 @@ theme = 'pinkehaende-theme'
     meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
-	name = "Services"
-	url = "/services/"
+	name = "Umweltproblem Kippe"
+	url = "/umweltproblemkippe/"
     weight = 0
 
 [[menu.main]]

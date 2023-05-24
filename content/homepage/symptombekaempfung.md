@@ -3,7 +3,7 @@ title: 'Unsere Sammlungen'
 weight: 3
 background: 'images/symptombeseitigung.jpg'
 button: 'Folge unserem Telegram-Kanal'
-buttonLink: 'work'
+buttonLink: 'https://t.me/pinkehaende'
 align: right
 ---
 

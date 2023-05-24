@@ -3,7 +3,7 @@ title: 'Von Kippenkunst und mehr'
 weight: 4
 background: 'images/kooperationen.jpg'
 button: 'Schreib uns!'
-buttonLink: 'work'
+buttonLink: 'mailto:info@pinke-haende.de'
 align: left
 ---
 
