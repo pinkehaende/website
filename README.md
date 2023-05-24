@@ -33,7 +33,7 @@ Immer:
 ```sh
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Meine tolle neue Idee: Zigarettenfilter mit Asbest"
-git push 
+git push --recurse-submodules=on-demand
 ```
 5. Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 6. Änderungen veröffentlichen
