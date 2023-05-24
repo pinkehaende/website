@@ -3,7 +3,7 @@ title: 'Umweltproblem Kippe'
 weight: 1
 background: 'images/aufklaerung.jpg'
 button: 'Erfahre mehr'
-buttonLink: 'work'
+buttonLink: 'umweltproblemkippe'
 align: right
 ---
 
