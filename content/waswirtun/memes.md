@@ -3,11 +3,12 @@ title: 'Memes gegen Kippenschnippen'
 date: 2018-11-18T12:33:46+10:00
 draft: false
 weight: 2
+gallerie: 'Memes'
 heroHeading: 'Memes gegen Kippenschnippen'
 heroSubHeading: 'mit Humor für die Umwelt'
-heroBackground: ''
-thumbnail: 'images/flamin_piano.jpg'
-images: ['']
+heroBackground: 'images/memes.jpg'
+thumbnail: 'images/memes.jpg'
+images: ['images/babushka.jpg', 'images/pleased_sulley.jpg', 'images/guy_mirror.jpg', 'images/baby_yoda.jpg', 'images/flamin_piano.jpg',]
 ---
 
 Manche Herausforderungen lassen sich am besten mit Humor bewältigen. Insbesondere auf Social Media-Plattformen spielen kurzweilige und witzige Bilder eine wichtige Rolle, um eine breitere und vor allem junge Zielgruppe anzusprechen. In Anbetracht der Tatsache, dass es bisher kaum Content zur Kippenthematik gab, haben wir beschlossen, eigene Memes zu erstellen.
