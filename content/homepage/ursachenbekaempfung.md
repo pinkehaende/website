@@ -3,7 +3,7 @@ title: 'Was wir tun'
 weight: 2
 background: 'images/ursache.jpg'
 button: 'Unsere Aktionen'
-buttonLink: 'work'
+buttonLink: 'waswirtun'
 align: left
 ---
 

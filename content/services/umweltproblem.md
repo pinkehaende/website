@@ -1,7 +1,8 @@
 ---
-title: 'Mergers'
+title: 'Massives Umweltproblem'
 date: 2018-11-28T15:15:34+10:00
-icon: 'services/service-icon-4.png'
+icon: ''
+weight: 1
 featured: true
 draft: false
 heroHeading: 'Mergers & Acquisitions'
@@ -9,10 +10,8 @@ heroSubHeading: 'Thinking of acquiring another business? Let us guide you throug
 heroBackground: 'services/service2.jpg'
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
-
+Über 4,5 Billionen Zigarettenstummel werden jedes Jahr weltweit achtlos weggeworfen.
+<!--
 ## Ne verba patulosque numen vix libet
 
 Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
@@ -54,3 +53,4 @@ iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
 et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
 somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
 tamen lentis spectat, Titania est animo.
+-->

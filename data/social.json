@@ -1,12 +1,12 @@
 [
     {
-        "name": "Github",
-        "link": "https://github.com/zerostaticthemes/hugo-serif-theme",
-        "image": "social/github.svg"
+        "name": "Telegram",
+        "link": "https://t.me/pinkehaende",
+        "image": "social/telegram.svg"
     },
     {
-        "name": "Twitter",
-        "link": "https://twitter.com/zerostaticio",
-        "image": "social/twitter.svg"
+        "name": "Instagram",
+        "link": "https://instagram.com/pinkehaende?igshid=MzNlNGNkZWQ4Mg==",
+        "image": "social/instagram.svg"
     }
 ]
