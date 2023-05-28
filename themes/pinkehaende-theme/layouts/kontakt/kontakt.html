@@ -1,0 +1,68 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      {{ .Content }}
+      <ul>
+        {{ if .Site.Data.contact.phone }}
+        <li><strong>Tel: </strong>{{ .Site.Data.contact.phone }}</li>
+        {{ end }}
+        {{ if .Site.Data.contact.email }}
+        <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
+            {{ .Site.Data.contact.email }}</a></li>
+        {{ end }}
+        {{ if .Site.Data.contact.telegram }}
+        <li><strong>Telegram: </strong><a href="{{ .Site.Data.contact.telegram }}" target="blank">{{ .Site.Data.contact.telegram }}</a></li>
+        {{ end }}
+        {{ if .Site.Data.contact.instagram }}
+        <li><strong>Instagram: </strong><a href="{{ .Site.Data.contact.instagram }}" target="blank">{{ .Site.Data.contact.instagram }}</a></li>
+        {{ end }}
+        {{ if .Site.Data.contact.address }}
+        <li style="white-space: pre-wrap;"><strong>Anschrift: </strong><br>{{ .Site.Data.contact.address }}</li>
+        {{ end }}
+      </ul>
+      <!--{{ if .Site.Data.contact.hours }}
+      <h4 class="mt-4">Business Hours</h4>
+      <table class="table table-sm opening-hours-table">
+        {{ range .Site.Data.contact.hours }}
+        <tr>
+          <td class="day font-weight-bold">{{ .day }}</td>
+          <td class="opens">{{ .open }}</td>
+          <td>-</td>
+          <td class="closes">{{ .close }}</td>
+        </tr>
+        {{ end }}
+      </table>
+      {{ end }}-->
+    </div>
+  </div>
+</div>
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Impressum</h1>
+        <h5>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+        <p>Jannis Georgi<br />
+        Voglerstra&szlig;e 33<br />
+        01277 Dresden</p>
+        <h5>Redaktionell verantwortlich</h2>
+        <p>Jannis Georgi</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,54 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
+
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{if gt (len $services) 0}}
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+  <div class="row justify-content-start">
+    <!--<div class="col-12">
+      <h3 class="text-center mb-3">Hier findet Ihr einige der Problematiken</h2>
+    </div>-->
+    {{ range first 11 (sort $services ".Params.weight") }}
+    <div class="col-12 col-md-4 mb-1">
+      {{ .Render "summary" }}
+    </div>
+    {{ end }}
+    <!--<div class="col-12 text-center">
+      <a class="button button-primary" href="{{ .Site.BaseURL }}services">View All Services</a>
+    </div>-->
+  </div>
+</div>
+{{end}}
+
+
+
+<!--{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
+
+{{ $headless := .Site.GetPage "/pages/about" }}
+{{ $subpages := $headless.Resources.ByType "page" }}
+{{ $subpages := sort $subpages ".Params.weight" }}
+{{ range $subpages }}
+<div class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
+  <div class="container pt-17 pb-17">
+    <div class="row">
+      <div class="col-12 col-md-6 {{ if eq .Params.align "right" }}offset-md-6{{ end }}">
+        <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
+        {{ .Content }}
+        {{ if .Params.button }}
+          <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+-->
+
+
+{{ end }}
