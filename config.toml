@@ -12,49 +12,44 @@ theme = 'pinkehaende-theme'
   google_analytics_id=""
 
   [params.logo]
-    mobile = "images/logo-mobile.svg"
+    mobile = "images/Logo-Pinke-Haende-kl.jpg"
     mobile_height = "35px"
     mobile_width = "35px"
-    desktop = "images/logo.svg"
-    desktop_height = "28px"
+    desktop = "images/Logo-Pinke-Haende-kl.jpg"
+    desktop_height = "18px"
     desktop_width = "216px"
-    alt = "Hugo Hero"
+    alt = "Pinke Hände"
 
   [params.homepage_meta_tags]
-    meta_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_description = "Pinke Hände ist eine Initiative die sich für die richtige Entsorgung von Zigarettenstummeln einsetzt."
     meta_og_title = "Pinke Hände"
     meta_og_type = "website"
     meta_og_url = "https://pinkehaende.github.io/website/"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
-    meta_og_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_og_image = "https://pinkehaende.github.io/website/themes/pinkehaende-theme/static/1-2.jpg"
+    meta_og_description = "Pinke Hände ist eine Initiative die sich für die richtige Entsorgung von Zigarettenstummeln einsetzt."
     meta_twitter_card = "summary"
     meta_twitter_site = "@zerostaticio"
     meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
-	name = "Services"
-	url = "/services/"
-    weight = 0
-
-[[menu.main]]
-    name = "Work"
-    url = "/work/"
+	name = "Umweltproblem Kippe"
+	url = "/umweltproblemkippe/"
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Was Wir Tun"
+    url = "/waswirtun/"
     weight = 2
 
 [[menu.main]]
-    name = "History"
-    url = "/history/"
-    weight = 2
-
-[[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Über uns"
+    url = "/ueberuns/"
     weight = 3
+
+[[menu.main]]
+    name = "Kontakt"
+    url = "/kontakt/"
+    weight = 4
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"

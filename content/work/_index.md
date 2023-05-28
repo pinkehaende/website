@@ -5,3 +5,6 @@ heroHeading: 'Work'
 heroSubHeading: 'Our portfolio and previous projects'
 heroBackground: ''
 ---
+
+Wir haben eine Vielzahl von Projekten durchgeführt und auch immer neue am laufen. 
+wir werden auf dieser Seite nach und nach all unsere Projekte vorstellen:
