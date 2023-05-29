@@ -4,8 +4,8 @@ date: 2018-11-18T12:33:46+10:00
 layout: 'ueberuns'
 heroHeading: 'Willkommen bei "Pinke Hände"!'
 heroSubHeading: ''
-heroBackground: '/images/ueberuns.jpg'
-images: ['/images/ueberunsg1.jpg', '/images/ueberunsg2.jpg','/images/ueberunsg3.jpg','/images/ueberunsg4.jpg','/images/ueberunsg5.jpg','/images/ueberunsg6.jpg']
+heroBackground: 'images/ueberuns.jpg'
+images: ['images/ueberunsg1.jpg', 'images/ueberunsg2.jpg','images/ueberunsg3.jpg','images/ueberunsg4.jpg','images/ueberunsg5.jpg','images/ueberunsg6.jpg']
 ---
 
 Im Jahr 2019 wurden wir als normale Müllsammelgruppe gegründet. Alles begann, als Alex und Kim sich an der Elbe trafen, um sich von einer Trennung abzulenken. Während des "Frustmüllsammelns" trugen sie pinke Handschuhe, was zur Idee für den Namen "Pinke Hände" führte. Während einer globalen Klimastreik-Demonstration von Fridays for Future sind die Pinken Hände hinter der Demo hergelaufen, um den anfallenden Demomüll aufzusammeln. Dabei fiel tatsächlich kaum Müll an, stattdessen sammelten sie einen großen 20-Liter-Eimer voller Kippenstummel - über 10.000 Stück. Dies führte dazu, dass sich die Gruppe auf das Thema Kippenmüll spezialisierte.

@@ -1,4 +1,4 @@
-baseURL = 'https://pinkehaende.github.io/website/'
+baseURL = 'http://localhost/'
 languageCode = 'de-de'
 title = 'Pinke Hände'
 theme = 'pinkehaende-theme'
@@ -25,7 +25,7 @@ theme = 'pinkehaende-theme'
     meta_og_title = "Pinke Hände"
     meta_og_type = "website"
     meta_og_url = "https://pinkehaende.github.io/website/"
-    meta_og_image = "https://pinkehaende.github.io/website/themes/pinkehaende-theme/static/1-2.jpg"
+    meta_og_image = "https://pinkehaende.github.io/website/images/1-2.jpg"
     meta_og_description = "Pinke Hände ist eine Initiative die sich für die richtige Entsorgung von Zigarettenstummeln einsetzt."
     meta_twitter_card = "summary"
     meta_twitter_site = "@zerostaticio"
@@ -33,23 +33,23 @@ theme = 'pinkehaende-theme'
 
 [[menu.main]]
 	name = "Umweltproblem Kippe"
-	url = "/umweltproblemkippe/"
-    weight = 1
+	pageRef = "/umweltproblemkippe/"
+  weight = 1
 
 [[menu.main]]
-    name = "Was Wir Tun"
-    url = "/waswirtun/"
-    weight = 2
+  name = "Was Wir Tun"
+  pageRef = "/waswirtun/"
+  weight = 2
 
 [[menu.main]]
-    name = "Über uns"
-    url = "/ueberuns/"
-    weight = 3
+  name = "Über uns"
+  pageRef = "/ueberuns/"
+  weight = 3
 
 [[menu.main]]
-    name = "Kontakt"
-    url = "/kontakt/"
-    weight = 4
+  name = "Kontakt"
+  pageRef = "/kontakt/"
+  weight = 4
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"

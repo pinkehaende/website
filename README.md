@@ -29,7 +29,7 @@ git push
 5. Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 6. Änderungen veröffentlichen
 ```sh
-hugo --minify
+hugo --minify --environment production
 # Dateien in `public/` auf den Webhoster laden
 rsync -avz --delete public/ username@meinhoster.de:~/www/
 ```
