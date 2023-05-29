@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -26,7 +27,7 @@ jobs:
 
       - name: Build (PR)
         if: ${{ github.event_name == 'pull_request' }}
-        run: hugo --baseURL https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}
+        run: hugo --baseURL https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}/
 
       - name: Deploy (PR)
         uses: peaceiris/actions-gh-pages@v3
@@ -35,6 +36,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           destination_dir: ./pr${{ github.event.pull_request.number }}
+
+      - uses: mshick/add-pr-comment@v2
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          message: |
+            PR-Vorschau verfügbar unter https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}/
 
       - name: Build (master)
         if: ${{ github.ref == 'refs/heads/main' }}
