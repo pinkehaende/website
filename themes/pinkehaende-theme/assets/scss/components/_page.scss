@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  .wrapper {
+    flex: 1;
+  }
+  .work-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .masonry {
+    /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
+  }
+  .item {
+    /* Masonry bricks or child elements */
+    background-color: #eee;
+    margin: 0 0 1em;
+  }
+  .content {
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      }
+  }
+}

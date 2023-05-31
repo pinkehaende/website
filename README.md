@@ -21,15 +21,6 @@ hugo server -D -E -F
 ```
 3. Dinge hinzufügen, ändern, entfernen
 4. Änderungen versionieren
-
-Nur bei Änderungen im Theme:
-```sh
-cd themes/pinkehaende-theme
-git add . # Oder eine Liste mit geänderten Dateien
-git commit -m "Fahndungsbilder von Umweltverschnutzern hinzugefügt"
-git push origin HEAD:master
-```
-Immer:
 ```sh
 git add . # Oder eine Liste mit geänderten Dateien
 git commit -m "Meine tolle neue Idee: Zigarettenfilter mit Asbest"
@@ -38,7 +29,7 @@ git push
 5. Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 6. Änderungen veröffentlichen
 ```sh
-hugo --minify
+hugo --minify --environment production
 # Dateien in `public/` auf den Webhoster laden
 rsync -avz --delete public/ username@meinhoster.de:~/www/
 ```

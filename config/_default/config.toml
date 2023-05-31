@@ -1,0 +1,56 @@
+baseURL = 'http://localhost/'
+languageCode = 'de-de'
+title = 'Pinke Hände'
+theme = 'pinkehaende-theme'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "-1.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/Logo-Pinke-Haende-kl.jpg"
+    mobile_height = "35px"
+    mobile_width = "35px"
+    desktop = "images/Logo-Pinke-Haende-kl.jpg"
+    desktop_height = "18px"
+    desktop_width = "216px"
+    alt = "Pinke Hände"
+
+  [params.homepage_meta_tags]
+    meta_description = "Pinke Hände ist eine Initiative die sich für die richtige Entsorgung von Zigarettenstummeln einsetzt."
+    meta_og_title = "Pinke Hände"
+    meta_og_type = "website"
+    meta_og_url = "https://pinkehaende.github.io/website/"
+    meta_og_image = "https://pinkehaende.github.io/website/images/1-2.jpg"
+    meta_og_description = "Pinke Hände ist eine Initiative die sich für die richtige Entsorgung von Zigarettenstummeln einsetzt."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
+
+[[menu.main]]
+	name = "Umweltproblem Kippe"
+	pageRef = "/umweltproblemkippe/"
+  weight = 1
+
+[[menu.main]]
+  name = "Was Wir Tun"
+  pageRef = "/waswirtun/"
+  weight = 2
+
+[[menu.main]]
+  name = "Über uns"
+  pageRef = "/ueberuns/"
+  weight = 3
+
+[[menu.main]]
+  name = "Kontakt"
+  pageRef = "/kontakt/"
+  weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"

@@ -9,10 +9,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -21,12 +25,31 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Build (PR)
+        if: ${{ github.event_name == 'pull_request' }}
+        run: hugo --baseURL https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}/
 
-      - name: Deploy
+      - name: Deploy (PR)
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          destination_dir: ./pr${{ github.event.pull_request.number }}
+
+      - uses: mshick/add-pr-comment@v2
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          message: |
+            PR-Vorschau verfügbar unter https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}/
+
+      - name: Build (master)
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: hugo --minify --baseURL https://pinkehaende.github.io/website/
+
+      - name: Deploy (master)
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
