@@ -44,12 +44,12 @@ jobs:
             PR-Vorschau verfügbar unter https://pinkehaende.github.io/website/pr${{ github.event.pull_request.number }}/
 
       - name: Build (master)
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: github.ref == 'refs/heads/main'
         run: hugo --minify --baseURL https://pinkehaende.github.io/website/
 
       - name: Deploy (master)
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
