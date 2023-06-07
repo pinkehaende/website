@@ -1,0 +1,28 @@
+name: production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --environment production
+    
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          protocol: ftps
+          server: ${{ secrets.server }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+          local-dir: ./public/
+          server-dir: /public/
