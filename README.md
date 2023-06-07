@@ -28,4 +28,5 @@ git push
 ```
 5. Pull Request in diesem Repository erstellen (optional, wenn auf eigenem Branch)
 6. Änderungen veröffentlichen
+
 Unter ` Actions` den Workflow `production` laufen lassen.
