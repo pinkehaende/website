@@ -33,24 +33,20 @@ theme = 'pinkehaende-theme'
 
 [[menu.main]]
 	name = "Umweltproblem Kippe"
-	url = "/umweltproblemkippe/"
+	pageref = "/umweltproblemkippe/"
   weight = 1
 
 [[menu.main]]
   name = "Was Wir Tun"
-  url = "/waswirtun/"
+  pageref = "/waswirtun/"
   weight = 2
 
 [[menu.main]]
   name = "Über uns"
-  url = "/ueberuns/"
+  pageref = "/ueberuns/"
   weight = 3
 
 [[menu.main]]
   name = "Kontakt"
-  url = "/kontakt/"
+  pageref = "/kontakt/"
   weight = 4
-
-[permalinks]
-  post = "/:year/:month/:day/:slug/"
-  pages = "/:filename/"
